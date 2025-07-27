@@ -1,0 +1,153 @@
+:root {
+  --primary-background-color: #ffffff;
+  --aside-bg-color: #233a5f;
+  --contacts-text-color: #233a5f;
+  --light-title-color: #ffffff;
+  --light-text-color: #ffffff;
+  --dark-title-color: #233a5f;
+  --dark-text-color: #2a2a2a;
+  --grey-text-color: #878787;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  background-color: var(--primary-background-color);
+  color: var(--dark-text-color);
+}
+
+a {
+  color: inherit;
+}
+
+.container {
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.main-container {
+  padding: 16px 12px;
+}
+
+.sidebar {
+  padding: 16px 12px;
+  background-color: var(--aside-bg-color);
+  color: var(--light-text-color);
+}
+
+.section {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--light-title-color);
+  margin-bottom: 4px;
+}
+
+.position {
+  font-size: 10px;
+  line-height: auto;
+  color: #c3c2c2;
+  margin-bottom: 4px;
+}
+
+.contacts-list {
+  list-style: none;
+}
+
+.item {
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+.contacts-link {
+  display: block;
+  width: 100%;
+  height: 23px;
+  padding: 4px 8px;
+  font-size: 10px;
+  line-height: 1.5;
+  text-decoration: none;
+  border-radius: 4px;
+  background-color: #e5e5e5;
+  color: var(--contacts-text-color);
+}
+
+.title {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--dark-title-color);
+  margin-bottom: 18px;
+}
+
+.aside-title {
+  color: var(--light-title-color);
+  margin-bottom: 4px;
+}
+
+.list {
+  padding-left: 12px;
+}
+
+.about-me {
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.experience-title {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--dark-text-color);
+  margin-bottom: 4px;
+}
+
+.experience-description {
+  font-size: 8px;
+  color: var(--dark-text-color);
+  margin-bottom: 4px;
+}
+
+.experience-text {
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--grey-text-color);
+}
